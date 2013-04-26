@@ -1,0 +1,1 @@
+This is a nodejs revamp of the pictpedia project we did for INFO4302 at Cornell.
