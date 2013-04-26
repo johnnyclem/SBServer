@@ -1,6 +1,8 @@
 var app = require('express')()
   , server = require('http').createServer(app)
-  , io = require('socket.io').listen(server);
+  , io = require('socket.io').listen(server)
+  , os = require('os');
+
 
 io.configure(function () { 
     io.set("transports", ["xhr-polling"]); 
@@ -43,5 +45,6 @@ app.get('/', function(req, res){
 });
 
 var port = process.env.PORT || 3000;
+console.log('Server is running at http://' + os.hostname() + ":" + port);
 
 server.listen(port);
