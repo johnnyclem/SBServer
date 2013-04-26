@@ -37,4 +37,4 @@ app.get('/', function(req, res){
 	res.render('home', options);
 });
 
-server.listen(3000);
+server.listen(80);
