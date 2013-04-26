@@ -37,4 +37,6 @@ app.get('/', function(req, res){
 	res.render('home', options);
 });
 
-server.listen(8000);
+var port = process.env.PORT || 3000;
+
+server.listen(port);
