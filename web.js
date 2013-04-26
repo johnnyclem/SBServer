@@ -22,9 +22,10 @@ var options = {
 	title					: 'Chat',
   description		: 'A simple socket.io powered chat program',
   author				: 'Qiming Fang',
+  app           : 'http://desolate-lake-6924.herokuapp.com',
   _layoutFile		: true
 };
-
+  
 var conns = [];
 var colors = {};
 
@@ -45,6 +46,4 @@ app.get('/', function(req, res){
 });
 
 var port = process.env.PORT || 3000;
-console.log('Server is running at http://' + os.hostname() + ":" + port);
-
 server.listen(port);

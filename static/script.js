@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var socket = io.connect('http://desolate-lake-6924.herokuapp.com');
+    var socket = io.connect(app);
     socket.on('update', function (data) {
       $("#chat_text").append('<li><span style="color:' + data.color + '; padding:2px; margin-right:5px; border:1px solid ' + 
         data.color + '"> ' + data.user + '</span>' + data.msg + '</li>');
