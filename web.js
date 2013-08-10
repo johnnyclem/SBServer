@@ -19,10 +19,10 @@ app.use(require('express').static(__dirname + '/static'));
 app.engine('ejs', engine);
 
 var options = {
-	title					: 'Chat',
-  description		: 'A simple socket.io powered chat program',
-  author				: 'Qiming Fang',
-  app           : 'http://desolate-lake-6924.herokuapp.com',
+	title					: 'Study Buddy',
+  description		: 'A simple socket.io powered lecture/notes app',
+  author				: 'John Clem',
+  app           : 'http://localhost:3000',
   _layoutFile		: true
 };
   
@@ -36,7 +36,7 @@ io.sockets.on('connection', function (socket) {
     socket.on('msg', function(data){
       var color = colors[socket.id];
       for (var i in conns){
-        conns[i].emit('update', {msg : data.msg, color : color, user : socket.id});
+        conns[i].emit('update', {msg : data.msg, color : color, name : data.name, user : socket.id});
       }
     })
 });

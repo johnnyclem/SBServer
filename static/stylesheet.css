@@ -1,10 +1,10 @@
 #chat{
-  width:1000px;
+  width:768px;
   margin:auto;
 }
 
 #chat_text{
-  height:350px;
+  height:800px;
   border: 1px solid #cccccc;
   overflow: auto;
   margin:0;
@@ -23,4 +23,8 @@
   -webkit-border-radius: 0 !important;
   -moz-border-radius: 0 !important;
   border-radius: 0 !important;
+}
+
+.listView {
+	font-size: 24px;
 }
