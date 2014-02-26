@@ -22,7 +22,7 @@ var options = {
 	title					: 'Study Buddy',
   description		: 'A simple socket.io powered lecture/notes app',
   author				: 'John Clem',
-  app           : 'http://study-buddy.herokuapp.com',
+  app           : 'http://localhost',
   _layoutFile		: true
 };
   
